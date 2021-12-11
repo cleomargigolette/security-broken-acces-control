@@ -1,0 +1,24 @@
+spring:
+  cache.type: none
+  devtools.restart.enabled: true
+  datasource:
+    platform: postgres
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    generate-ddl: true
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      org.hibernate.envers.audit_table_prefix: AUD_
+      org.hibernate.envers.audit_table_suffix: null
+  h2.console:
+    enabled: true
+    path: /db
+  messages:
+    basename: i18n/messages
+    encoding: ISO-8859-1

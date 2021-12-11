@@ -1,0 +1,1 @@
+The "WARNING: An illegal reflective access operation has occurred" is caused by spring-boot-devtools, no fix available.
